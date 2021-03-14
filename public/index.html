@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./tailwind.css">
+  <title>Champion pool Creator</title>
+</head>
+<body>
+  <header class="flex justify-between py-5 p-12">
+    <img src="" alt="Logo">
+    <button>
+      Dark
+    </button>
+  </header>
+  <main class="mt-32">
+    <section id="search" class="">
+      <form action="/user" method="GET" class="flex justify-center items-center">
+        <input id="summoner_search"
+        type="search" 
+        name="username" 
+        placeholder="Summone name..."
+        class="w-96 h-10 border-2 pl-3 text-sm rounded-xl transition duration-200 hover:border-purple-300 focus:border-purple-500 focus:outline-none"> 
+        <select id="region_input" 
+          name="region"
+          class="w-14 h-8 -ml-16 text-gray-400 text-sm rounded-r-xl focus:text-purple-400 focus:outline-none">
+          <option value="la1">LAN</option>
+          <option value="la2">LAS</option>
+          <option value="euw1">EUW</option>
+          <option value="eun1">EUN</option>
+          <option value="kr">KR</option>
+          <option value="jp1">JP</option>
+          <option value="na1">NA</option>
+          <option value="oc1">OC</option>
+          <option value="br1">BR</option>
+          <option value="ru">RS</option>
+          <option value="tr1">TR</option>
+        </select>
+        <button type="submit" 
+          class="bg-purple-500 pl-1 ml-2 w-12 h-10 rounded-r-xl text-gray-100 transition duration-200 hover:bg-purple-400 focus:outline-none focus:border-green-500">
+          Go
+        </button>
+        <div class="w-2 h-10 bg-white rounded-r-xl -ml-12"></div>
+      </form>
+    </section>
+    <section id="relations">
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

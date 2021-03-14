@@ -1,0 +1,29 @@
+{
+  "name": "champool-creator",
+  "version": "1.0.0",
+  "description": "League of Legends champion pool creator.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "leagueOfLegends",
+    "lol",
+    "API",
+    "webApp"
+  ],
+  "author": "Luis Viñas",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.3"
+  }
+}
