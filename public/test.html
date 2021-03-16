@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./tailwind.css">
+  <title>Document</title>
+</head>
+<body class="bg-gray-100 text-gray-500 p-3 h-screen">
+  <main class="flex h-full">
+    <section id="statsSection" class="w-1/4 p-3 py-6 bg-gray-200 rounded-2xl border-2">
+      <div id="statsSection_summoner" class="flex flex-col items-center mb-6">
+        <div class="flex mb-3">
+          <h2 class="text-lg">ViGo95 - <span class="text-gray-600">#LAN</span></h2>
+        </div>
+        <div id="summonerImages" class="relative w-32">
+          <img src="./assets/Emblem_Bronze.png" 
+            alt="Liga del invocador" 
+            class="absolute -right-1 -bottom-1 w-12 py-0.5 px-1 rounded-full bg-gray-800">
+          <img src="./assets/3231.png" 
+            alt="Icono del invocador" 
+            class="w-32 rounded-full border-4 border-yellow-900 transition duration-300 hover:border-yellow-800">
+        </div>
+      </div>
+      <div id="statsSection_champions">
+        <div id="championCard" class="relative p-4 border border-blue-400 rounded-2xl">
+          <div class="absolute -right-2 -top-6 flex justify-center items-center w-14 h-14 
+            bg-gray-800 rounded-full border-4 border-gray-800">
+            <img src="./assets/M7.png" alt="Maestria con el campeon" class="w-9">
+          </div>
+          <div id="championIdentify" class="flex items-center mb-4">
+            <img src="./assets/Mordekaiser_0.jpg" alt="Imagen del campeon" class="w-16 mr-4 rounded-full border-2 border-blue-500">
+            <div id="championName" class="">
+              <h3>Mordekaiser</h3>
+              <p class="text-sm text-gray-600">El renacido de hierro</p>
+            </div>
+          </div>
+          <div id="championStats" class="flex justify-around ">
+            <div id="championWins" class="">
+              <p>victorias</p>
+              <h3>79</h3>
+            </div>
+            <div id="championLosses" class="">
+              <p>derrotas</p>
+              <h3>79</h3>
+            </div>
+            <div id="championPoints" class="">
+              <p>puntos</p>
+              <h3>79</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="exitBtn">
+
+      </button>
+    </section>
+    <section id="poolSection" class="">
+
+    </section>
+  </main>
+</body>
+</html>

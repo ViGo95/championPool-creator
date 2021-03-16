@@ -7,45 +7,70 @@
   <link rel="stylesheet" href="./tailwind.css">
   <title>Champion pool Creator</title>
 </head>
-<body>
+<body class="bg-gray-900">
   <header class="flex justify-between py-5 p-12">
     <img src="" alt="Logo">
     <button>
       Dark
     </button>
   </header>
-  <main class="mt-32">
-    <section id="search" class="">
+  <main id="main" class="mt-24">
+    <!-- <h2>Loading...</h2> -->
+    <section id="search" class="flex flex-col">
+      <img src="./assets/621feb70817945.5bb040bf2b796-removebg-preview.png" 
+        alt=""
+        class="w-28 self-center mb-4">
       <form action="/user" method="GET" class="flex justify-center items-center">
-        <input id="summoner_search"
-        type="search" 
-        name="username" 
-        placeholder="Summone name..."
-        class="w-96 h-10 border-2 pl-3 text-sm rounded-xl transition duration-200 hover:border-purple-300 focus:border-purple-500 focus:outline-none"> 
-        <select id="region_input" 
-          name="region"
-          class="w-14 h-8 -ml-16 text-gray-400 text-sm rounded-r-xl focus:text-purple-400 focus:outline-none">
-          <option value="la1">LAN</option>
-          <option value="la2">LAS</option>
-          <option value="euw1">EUW</option>
-          <option value="eun1">EUN</option>
-          <option value="kr">KR</option>
-          <option value="jp1">JP</option>
-          <option value="na1">NA</option>
-          <option value="oc1">OC</option>
-          <option value="br1">BR</option>
-          <option value="ru">RS</option>
-          <option value="tr1">TR</option>
-        </select>
+        
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div class="absolute flex justify-center w-24 bg-gray-900 -top-2.5 left-6 pointer-events-none">
+            <label for="username" class="text-gray-400 sm:text-sm">
+              Summoner
+            </label>
+          </div>
+          <input type="text" 
+            id="price" 
+            name="username" 
+            class="bg-gray-900 border-2 transition duration-200 focus:border-blue-500 focus:outline-none
+              block w-96 h-11 pl-4 sm:text-sm border-gray-300 rounded-xl focus-within:text-gray-500"
+            autocomplete="off">
+          <div class="absolute inset-y-0 right-2 flex items-center">
+            <label for="currency" class="sr-only">Currency</label>
+            <select id="currency" 
+              name="region" 
+              class="focus:ring-blue-500 focus:border-blue-500 h-full py-0 pr-1 border-transparent 
+                bg-transparent text-gray-500 sm:text-sm rounded-md">
+              <option value="la1">LAN</option>
+              <option value="la2">LAS</option>
+              <option value="euw1">EUW</option>
+              <option value="eun1">EUN</option>
+              <option value="kr">KR</option>
+              <option value="jp1">JP</option>
+              <option value="na1">NA</option>
+              <option value="oc1">OC</option>
+              <option value="br1">BR</option>
+              <option value="ru">RS</option>
+              <option value="tr1">TR</option>
+            </select>
+          </div>
+        </div>
         <button type="submit" 
-          class="bg-purple-500 pl-1 ml-2 w-12 h-10 rounded-r-xl text-gray-100 transition duration-200 hover:bg-purple-400 focus:outline-none focus:border-green-500">
+          class="bg-blue-500 pl-2 ml-2 w-12 h-12 rounded-r-xl text-gray-100 transition duration-200 
+            hover:bg-blue-400 focus:outline-none">
           Go
         </button>
-        <div class="w-2 h-10 bg-white rounded-r-xl -ml-12"></div>
+        <div class="w-2 h-12 bg-gray-900 rounded-r-2xl -ml-12"></div>
       </form>
     </section>
-    <section id="relations">
-
+    <section id="relations" class="flex justify-center items-center mt-32 text-gray-400">
+      <div class="flex flex-col w-1/2 border-r border-blue-500 h-80">
+        <h2 class="self-center text-3xl mb-8">¿What is a Champion pool...?</h2>
+        <p class="self-center w-3/4">Champion pool refers to the number of champions a player is consistently using and optimize around to ensure the highest performance and win rate at all times, especially when it comes to ranked matches.</p>
+      </div>
+      <div class="flex flex-col w-1/2 border-l border-blue-500 h-80">
+        <h2 class="self-center text-3xl mb-8">¿Why I'm gonna use it?</h2>
+        <p class="self-center w-3/4">Champion pool refers to the number of champions a player is consistently using and optimize around to ensure the highest performance and win rate at all times, especially when it comes to ranked matches.</p>
+      </div>
     </section>
   </main>
   <footer>

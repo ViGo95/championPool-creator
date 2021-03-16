@@ -12,7 +12,6 @@ const getSummoner = async (username, region) => {
   const matches = await getMatches(data.accountId, region)
 
   const summoner = model(data, region, league, maestries, matches)
-
   return summoner
 }
 
