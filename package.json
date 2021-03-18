@@ -4,7 +4,8 @@
   "description": "League of Legends champion pool creator.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "build": "npx tailwindcss-cli@latest build ./src/styles/main.css -o ./public/tailwind.css --watch"
   },
   "keywords": [
     "leagueOfLegends",
