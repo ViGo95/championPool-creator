@@ -20,6 +20,7 @@ module.exports = {
       championSquare: 'http://ddragon.leagueoflegends.com/cdn/11.5.1/img/champion/',
       championsImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/'
     },
-    key: '?api_key=RGAPI-d7335122-0cd8-4103-b0a6-650f33c7fb66'
+    key: '?api_key=' + 'RGAPI-b3b28d89-a382-4978-8bba-fe72bc02a518',
+    andKey: '&api_key=' + 'RGAPI-b3b28d89-a382-4978-8bba-fe72bc02a518',
   }
 }

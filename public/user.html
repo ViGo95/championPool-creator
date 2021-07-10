@@ -11,28 +11,117 @@
   <link rel="stylesheet" href="./tailwind.css">
   <title>Document</title>
 </head>
-<body class="flex flex-col h-screen p-6 bg-gray-800 text-gray-700">
+<body class="flex flex-col h-screen p-6 bg-gray-200 text-gray-500">
   <main class="flex justify-between h-3/5">
     <section id="statistics" class="w-1/4 h-full border border-blue-400">
 
     </section>
     <section id="summoner" class="flex justify-center w-5/12 h-full pt-5 border border-blue-400">
       <div class="relative">
-        <h3 class="mb-5 text-center text-lg">ViGo95 - <span class="text-gray-500">LAN</span></h3>
-        <img src="./assets/Emblem_Bronze.png" alt="" class="absolute w-20 bottom-0 -ml-10 inset-x-1/2">
-        <div class="flex justify-center items-center w-64 h-64 shadow-plane rounded-full">
-          <div class="w-56 h-56 rounded-full border-4 border-yellow-800 transition duration-300 hover:border-green-500">
-            <img src="./assets/3231.png" alt="" class="w-full rounded-full border-2 border-transparent">
+        <h3 class="mb-4 text-center text-lg font-semibold">ViGo95 - <span class="text-gray-400 font-normal">LAN</span></h3>
+        <div class="relative flex justify-center items-center bg-gray-100 border-2 border-gray-300 w-64 h-64 shadow-md transition duration-200 hover:shadow-lg rounded-full">
+          <div class="absolute left-0 w-1/2 h-full bg-yellow-800 rounded-l-full border border-gray-100 transform origin-right -rotate-90"></div>
+          <div class="absolute left-0 w-1/2 h-full bg-gray-100 rounded-l-full"></div>
+          <div class="absolute left-0 w-1/2 h-full bg-gray-100 rounded-l-full transform origin-right rotate-45"></div>
+          <div class="absolute right-2 w-32 h-60 bg-gray-100 rounded-r-full"></div>
+          <div class="absolute w-52 h-52 rounded-full border-4 border-yellow-800 shadow-xl transition duration-300 hover:border-green-500">
+            <img src="./assets/profileicon/3231.png" alt="" class="w-full rounded-full border-2 border-transparent">
           </div>
         </div>
+        <img src="./assets/Leagues/bronze.png" alt="" class="absolute w-20 bottom-2 -ml-10 inset-x-1/2">
+        <img src="./assets/Leagues/silver.png" alt="" class="absolute w-12 right-2 top-16">
       </div>
     </section>
     <div id="lines" class="w-1/4 h-full border border-blue-400">
 
     </div>
   </main>
-  <section id="champions">
+  <section id="champions" class="flex h-2/5 justify-around items-center">
+    <div class="relative flex w-96 h-48 border bg-gray-100 shadow transition duration-200 hover:shadow-md rounded-lg">
+      <div class="self-center w-36 h-36 -ml-4 bg-gray-200 border border-gray-300 shadow-md rounded-full">
+        <div class="flex justify-center items-center w-full h-full rounded-full shadow">
+          <img src="https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/Mordekaiser.png" 
+            alt="" 
+            class="rounded-full p-1 border-2 border-m7">
+        </div>
+      </div>
+      <div class="p-3">
+        <div>
+          <h3 class="font-semibold">Mordekaiser</h3>
+          <p class="text-gray-400 h-10">El renacido de hierro</p>
+        </div>
+        <div class="flex mt-1">
+          <div class="grid grid-cols-3 w-30 p-1 px-1.5 mr-2 border rounded-full shadow-md">
+            <img src="./assets/Roles/Fighter.png" alt="" class="w-6 rounded-full mx-auto">
+            <img src="./assets/Roles/Mage.png" alt="" class="w-6 rounded-full mx-auto">
+          </div>
+          <div class="grid grid-cols-2 w-20 p-1 px-1.5 border rounded-full shadow-md">
+            <img src="./assets/Position_Bronze-Top.png" alt="" class="w-6 mx-auto">
+            <img src="./assets/Position_Bronze-Jungle.png" alt="" class="w-6 mx-auto">
+          </div>
+        </div>
+      </div>
+      <div class="absolute flex justify-center items-center rounded-full w-16 h-16 -bottom-0 -left-1">
+        <img src="./assets/Maestries/M7.png" alt="" class="w-full h-full">
+      </div>
+      <div class="absolute right-0 bg-yellow-500 w-8 h-8 rounded-bl-3xl rounded-tr-lg border-l border-b shadow">
 
+      </div>
+    </div>
+    <!-- <div class="relative flex w-96 h-48 border bg-gray-100 shadow transition duration-200 hover:shadow-md rounded-lg">
+      <div class="self-center w-36 h-36 -ml-3 bg-gray-200 border border-gray-300 shadow-md rounded-full">
+        <div class="flex justify-center items-center w-full h-full rounded-full shadow">
+          <img src="https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/Jhin.png" 
+            alt="" 
+            class="rounded-full p-1 border-2 border-m6">
+        </div>
+      </div>
+      <div class="p-3 ml-1 mr-5 w-44">
+        <h3 class="font-semibold">Jhin</h3>
+        <p class="text-gray-400">El sublime</p>
+        <div class="pt-1.5">
+          <img src="./assets/Fighter_icon.png" alt="" class="w-6 rounded-full">
+        </div>
+      </div>
+      <div class="mt-6">
+        <div class="w-8 mb-3">
+          <img src="./assets/Position_Bronze-Top.png" alt="">
+        </div>
+        <div class="w-8">
+          <img src="./assets/Position_Bronze-Jungle.png" alt="">
+        </div>
+      </div>
+      <div class="absolute flex justify-center items-center rounded-full w-16 h-16 -bottom-0 left-0">
+        <img src="./assets/Maestries/M6.png" alt="" class="w-full h-full">
+      </div>
+    </div>
+    <div class="relative flex w-96 h-48 border bg-gray-100 shadow transition duration-200 hover:shadow-md rounded-lg">
+      <div class="self-center w-36 h-36 -ml-3 bg-gray-200 border border-gray-300 shadow-md rounded-full">
+        <div class="flex justify-center items-center w-full h-full rounded-full shadow">
+          <img src="https://ddragon.leagueoflegends.com/cdn/11.6.1/img/champion/Kayn.png" 
+            alt="" 
+            class="rounded-full p-1 border-2 border-m5">
+        </div>
+      </div>
+      <div class="p-3 ml-1 mr-5">
+        <h3 class="font-semibold">Kayn</h3>
+        <p class="text-gray-400">El cegador sombrio</p>
+        <div class="pt-1.5">
+          <img src="./assets/Fighter_icon.png" alt="" class="w-6 rounded-full">
+        </div>
+      </div>
+      <div class="mt-6">
+        <div class="w-8 mb-3">
+          <img src="./assets/Position_Bronze-Top.png" alt="">
+        </div>
+        <div class="w-8">
+          <img src="./assets/Position_Bronze-Jungle.png" alt="">
+        </div>
+      </div>
+      <div class="absolute flex justify-center items-center rounded-full w-16 h-16 -bottom-0 left-0">
+        <img src="./assets/Maestries/M5.png" alt="" class="w-full h-full">
+      </div>
+    </div> -->
   </section>
 </body>
 </html>

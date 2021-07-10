@@ -4,7 +4,7 @@ const router = express.Router()
 const champions = require('../champions/controller').champions
 const success = require('../../utils/response').success
 const error = require('../../utils/response').error
-const getSummoner = require('./controller')
+const getSummoner = require('./controller').getSummoner
 const User = require('../../pages/User')
 
 router.get('/user', async (req, res) => {
@@ -12,7 +12,7 @@ router.get('/user', async (req, res) => {
   
   const summoner = await getSummoner(username, region)
 
-  const response = User(summoner)
+  const response = await User(summoner)
 
   success(req, res, '200', response, 'Ok')
 })

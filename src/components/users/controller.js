@@ -36,4 +36,21 @@ const getMatches = async (accountId, region) => {
   return matches
 }
 
-module.exports = getSummoner
+const getChampMatches = async (accountId, champID, region) => {
+
+  const champion = {
+    id: champID,
+  }
+
+  const response = await fetch(API.method + region + API.URL.matches + accountId + '?champion=' + champID + API.andKey)
+  champion.dataMatches = await response.json()
+
+  
+  
+  return champion
+}
+
+module.exports = {
+  getSummoner,
+  getChampMatches
+}
